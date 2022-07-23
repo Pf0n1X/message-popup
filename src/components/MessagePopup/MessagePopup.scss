@@ -1,0 +1,44 @@
+.message-popup {
+  &__bg {
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    backdrop-filter: blur(0px);
+    transition: backdrop-filter .5s,
+    visibility .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+    &.open {
+      backdrop-filter: blur(10px);
+      visibility: visible;
+    }
+  }
+
+  &__container {
+    padding: 1rem;
+    transition: transform .5s;
+    transform-origin: center;
+    transform: scale(0);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+
+    &.open {
+      transform: scale(1);
+    }
+  }
+}

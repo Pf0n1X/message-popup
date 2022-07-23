@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  color: #fff;
+  font-weight: 200;
+  text-align: center;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(45deg, #f4ff3d, #40d680);
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  margin-top: 1rem;
+}
